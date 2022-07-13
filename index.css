@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #ededed;
+    font-family: sans-serif;
+}
+#main {
+    margin: 40px auto;
+    width: 25%;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0.5px 0.5px 4px #808080c9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    background: cadetblue;
+}
+.main-header {
+
+}
+.main-header #title {
+    margin: 10px auto;
+    font-size: 35px;
+}
+.main-header #description {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.main-content {
+
+}
+.main-content form {
+
+display: flex;
+
+flex-direction: column;
+
+row-gap: 14px;
+}
+.main-content form input[type="text"], .main-content form input[type="email"], .main-content form input[type="number"], .main-content form select {
+    
+border: 0;
+    
+outline: none;
+    
+padding: 7px 10px;
+    
+width: 200px;
+}
+
+.main-content form button[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main-content form input[type="radio"], .main-content form input[type="checkbox"] {margin-right: 10px;}
+
+.main-content form textarea {
+    width: 270px;
+    height: 84px;
+}
+
+.main-content form  select {
+    width: 214px;
+}
+
+.main-content form label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.main-content form p {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 500px) {
+    #main {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

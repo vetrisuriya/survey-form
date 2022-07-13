@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freecodecamp -- Tribute page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <main id="main">
+        <div class="main-header">
+            <h1 class="title" id="title">Feedback Form</h1>
+            <p class="description" id="description">Enter your feedback for our services</p>
+        </div>
+        <div class="main-content">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Service Rating</label>
+                    <input type="number" name="number" id="number" min="0" max="10" class="form-control" placeholder="Enter your Rating">
+                </div>
+                <div class="form-group">
+                    <p>How do you know about our Restaurant</p>
+                    <select id="dropdown" name="dropdown" class="form-control" required>
+                        <option disabled="" selected="" value="">Select referer</option>
+                        <option value="Digital Ad">Digital Ad</option>
+                        <option value="Newspaper Ad">Newspaper Ad</option>
+                        <option value="Someone told you">Someone told you</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Will you come next time?</p>
+                    <label><input name="user-survey-radio" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+                    <label><input name="user-survey-radio" value="maybe" type="radio" class="input-radio">Maybe</label>
+                    <label><input name="user-survey-radio" value="not-sure" type="radio" class="input-radio">Not sure</label>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved?</p>
+                    <label><input name="user-survey-checkbox" value="Our Service" type="checkbox"class="input-checkbox">Our Service</label>
+                    <label><input name="user-survey-checkbox" value="Inner Decoration" type="checkbox"class="input-checkbox">Inner Decoration</label>
+                    <label><input name="user-survey-checkbox" value="Food Receipes" type="checkbox"class="input-checkbox">Food Receipes</label>
+                    <label><input name="user-survey-checkbox" value="Price Range is high" type="checkbox"class="input-checkbox">Price Range is high</label>
+                    <label><input name="user-survey-checkbox" value="Other" type="checkbox"class="input-checkbox">Other</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="comment" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
